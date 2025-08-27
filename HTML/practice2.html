@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습2</title>
+</head>
+<body>
+    <h3>설문조사</h3>
+
+    <form>
+        <div>
+            <label for="user-name">이름</label>
+            <input type="text" id="user-name" />
+        </div>
+        <div>
+            <label for="user-email">이메일</label>
+            <input type="email" placeholder="abc@example.com" id="user-email" />
+        </div>
+        <br/>
+        <div>
+            <h4>나이</h4>
+            <input type="radio" name="age" checked id="teen"/> <label for="teen">10대</label>
+            <input type="radio" name="age" id="twenty"/> <label for="twenty">20대</label>
+            <input type="radio" name="age" id="thirty"/> <label for="thirty">30대</label>
+            <input type="radio" name="age" id="fourty"/> <label for="fourty">40대</label>
+            <input type="radio" name="age" id="fifty"/> <label for="fifty">50대</label>
+            <input type="radio" name="age" id="sixty"/> <label for="sixty">60대 이상</label>
+        </div>
+        <br/>
+        <div>
+            <h4>원하는 강의(복수선택가능)</h4>
+            <input type="checkbox" name="class" id="html"/> <label for="html">HTML</label>
+            <input type="checkbox" name="class" id="css"/> <label for="css">CSS</label>
+            <input type="checkbox" name="class" id="js"/> <label for="js">JavaScript</label>
+        </div>
+        <br/>
+        <div>
+            <textarea
+            placeholder="하고 싶은 말을 써주세요"
+            cols="70"
+            rows="10"
+            ></textarea>
+        </div>
+        <br/>
+        <div>
+            <button type="submit">제출</button>
+        </div>
+
+    </form>
+</body>
+</html>

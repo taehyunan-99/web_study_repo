@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form 태그</h1>
+    <!-- form 태그 : HTML에서 사용자 입력을 서버로 전송하기 위한 영역을 만드는 태그 
+        - action : 데이터를 전송할 서버의 URL 지정
+        - method : 데이터를 전송하는 방식 지정
+        - name/id : 폼을 구분하기 위한 이름
+    -->
+    
+    <form>
+        <!-- input 태그 : 다양한 사용자 입력을 처리하는 태그 
+            - placeholder : 안내 문구
+            - disabled : 입력을 불가능하게 함
+            - value : 입력 값
+        -->
+        <div>
+            <h3>Input 1 - Text</h3>
+            <div>
+                <span>Text 1</span>
+                <input type="text" placeholder="텍스트를 입력하세요." />
+            </div>
+            <div>
+                <span>Text 2</span>
+                <input type="text" disabled />
+            </div>
+            <div>
+                <span>Text 3</span>
+                <input type="text" readonly value="읽기전용입니다." />
+            </div>
+            <div>
+                <div>Textarea</div>
+                <textarea
+                    placeholder="장문형 텍스트 입력"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+            </div>
+        </div>
+
+        <div>
+            <h3>Input 2 - Email</h3>
+            <div>
+                <!-- label : for 속성과 input의 id를 일치시키면 label을 클릭했을 때 input이 포커싱 됨 -->
+                <label for="user-email">Email</label>
+                <input 
+                    type="email" placeholder="메일을 입력하세요." 
+                    id="user-email"
+                />
+            </div>
+        </div>
+
+        <div>
+            <h3>Input 3 - Checkbox</h3>
+            <div>
+                <h4>취미</h4>
+                <div><input type="checkbox" name="interest" value="soccer" checked /> 축구</div>
+                <div><input type="checkbox" name="interest" value="health" /> 헬스</div>
+                <div><input type="checkbox" name="interest" value="reading" /> 독서</div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Input 4 - Radio</h3>
+            <div>
+                <h4>성별</h4>
+                <input type="radio" name="gender" value="male" checked /> 남성
+                <input type="radio" name="gender" value="female" /> 여성
+            </div>
+        </div>
+
+        <div>
+            <h3>Select</h3>
+            <div>
+                <div>식사 메뉴</div>
+                <select name="dishes">
+                    <optgroup label="점심">
+                    <option>집밥</option>
+                    <option>냉면</option>
+                    <option>닭강정</option>
+                    <option>돈가스</option>
+                    </optgroup>
+                    <optgroup label="저녁">
+                    <option>치킨</option>
+                    <option>피자</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <h3>Input - Others</h3>
+            <div>
+                <input type="password" /> <br/>
+                <input type="file" /> <br/>
+                <input type="number" /> <br/>
+                <input type="range" /> <br/>
+                <input type="date" /> <br/>
+                <input type="color" /> <br/>
+            </div>
+        </div>
+        <br/>
+        <button type="submit">제출하기</button>
+    </form>
+    <button>일반버튼</button>
+
+</body>
+</html>
