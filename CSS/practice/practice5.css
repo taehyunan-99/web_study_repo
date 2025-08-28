@@ -1,0 +1,31 @@
+h3:hover {
+    color: white;
+    background-color: black;
+}
+
+.text:focus {
+    background-color: rgb(236, 152, 152);
+}
+
+input[id~="red"]:checked + label {
+    background-color: red;
+    color: white;
+}
+
+input[id~="blue"]:checked + label {
+    background-color: blue;
+    color: white;
+}
+
+input[id~="yellow"]:checked + label {
+    background-color: yellow;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: grey;
+    color: #f96666;
+}
