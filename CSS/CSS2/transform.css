@@ -15,13 +15,12 @@
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 50px;
-
 }
 
 .card {
     width: 100px;
     height: 100px;
-    background-color:deeppink;
+    background-color: deeppink;
     text-align: center;
     align-content: center;
     font-weight: bold;
