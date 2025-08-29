@@ -1,0 +1,50 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px 0px;
+    border: 2px solid black;
+}
+
+/* 사이즈가 고정됨 */
+.px-box {
+    width: 200px;
+    background-color: beige;
+}
+
+.wrapper {
+    width: 50%;
+}
+
+/* 부모 요소의 크기에 영향을 받음 */
+.percent-box {
+    width: 50%;
+    background-color: lightcyan;
+}
+
+/* 자신의 font size에 영향을 받음 */
+.em-box {
+    font-size: 16px;
+    width: 10em;
+    background-color: lightyellow;
+}
+
+/* 루트 요소의 font size 영향을 받음 */
+.rem-box {
+    font-size: 16px;
+    width: 10rem;
+    background-color: lightsalmon;
+}
+
+/* 부모 요소의 크기에 영향을 받지 않음 */
+.viewport-box {
+    width: 70vw;
+    height: 10vh;
+    background-color: azure;
+}

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    align-content: center;
+}
+
+/* 현재 위치에서 이동 */
+.position-relative {
+    background-color: lightcyan;
+    position: relative;
+    left: 100px;
+}
+
+/* 부모 요소 기준으로 위치 */
+.position-absolute {
+    background-color: beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 화면에서의 위치값에 고정 */
+.position-fixed {
+    background-color: lightcoral;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

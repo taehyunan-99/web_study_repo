@@ -1,0 +1,44 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: cornflowerblue;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color:deeppink;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* 이동 */
+.move:hover {
+    transform: translateX(100px);
+}
+
+/* 확대 */
+.btn:hover {
+    transform: scale(1.5);
+}
+
+/* 회전 */
+.card:hover {
+    transform: rotate(45deg);
+}

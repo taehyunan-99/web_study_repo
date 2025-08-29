@@ -1,0 +1,10 @@
+
+.box {
+    width: 50%;
+    padding: 30px;
+
+    border-top: 20px inset rgb(243, 243, 158);
+    border-bottom: 10px dotted rgb(244, 105, 105);
+    border-left: 15px groove rgb(103, 103, 244);
+    border-right: 5px double rgb(136, 245, 136);
+}

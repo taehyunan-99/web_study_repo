@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.box {
+    border: 1px solid black;
+    width: 3rem;
+    text-align: center;
+    background-color: beige;
+}
+
+.item1 {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.item2 {
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+}
+
+.item3 {
+    position: fixed;
+    right: 100px;
+    top: 100px;
+}

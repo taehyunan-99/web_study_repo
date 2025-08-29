@@ -1,0 +1,39 @@
+/* flex 기본 정렬은 가로 정렬 */
+.container {
+    display: flex;
+
+    /* 정렬 방향 변환 */
+    /* flex-direction: column; */
+
+    /* 요소간 거리 */
+    gap: 10px;
+
+    /* 정렬 방향에 대한 정렬 */
+    justify-content: space-between;
+
+    /* 정렬 방향의 수직에 대한 정렬 */
+    align-items: center;
+
+    /* 요소의 크기 보존하여 크기 넘어가면 아래로 내림 */
+    /* flex-wrap: wrap; */
+}
+
+.item {
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    width: 150px;
+    height: 150px;
+}
+
+.item3 {
+    width: 300px;
+    height: 300px;
+}

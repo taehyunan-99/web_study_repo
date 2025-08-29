@@ -26,6 +26,6 @@ input[id~="yellow"]:checked + label {
 }
 
 .btn:active {
-    background-color: grey;
+    background-color: rgb(170, 170, 170);
     color: #f96666;
 }
