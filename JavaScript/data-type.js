@@ -97,3 +97,51 @@ console.log(cat["isCute"]);
 
 let myKey = "name";
 console.log(cat[myKey]);
+
+// 자료형 확인
+console.log(typeof "문자");
+console.log(typeof 100);
+console.log(typeof 3.14);
+console.log(typeof true);
+console.log(typeof false);
+console.log(typeof null); // object? -> 설계상의 실수
+console.log(typeof undefined);
+console.log(typeof fruits);
+console.log(typeof cat);
+
+// 형변환
+// 1) 암시적 형변환
+console.log("2" + 3);
+console.log("" + 100);
+
+// 2) 명시적 형변환
+
+// 1. 문자열로 변환 String()
+let str1 = 123;
+let str2 = true;
+let str3 = undefined;
+
+console.log(String(str1), typeof String(str1));
+console.log(String(str2), typeof String(str2));
+console.log(String(str3), typeof String(str3));
+
+// .toString() 사용
+console.log(str1.toString(), typeof str1.toString());
+
+// 2. 숫자로 변환 Number()
+let n1 = "123";
+let n2 = false;
+let n3 = "문자열";
+let n4 = 3.14;
+let n5 = "3.14";
+
+console.log(Number(n1), typeof Number(n1));
+console.log(Number(n2), typeof Number(n2));
+console.log(Number(n3), typeof Number(n3));
+console.log(Number(n4), typeof Number(n4));
+
+console.log(Number(undefined), typeof Number(undefined));
+console.log(Number(null), typeof Number(null));
+
+console.log(parseInt(n4, 10));
+console.log(parseFloat(n5));
