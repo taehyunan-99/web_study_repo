@@ -1,0 +1,24 @@
+.App {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.add-input {
+    margin: 10px;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.todo-item {
+    display: flex;
+    gap: 5px;
+}
